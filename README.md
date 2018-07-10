@@ -18,6 +18,6 @@ Fine tune the top layer of pretrained Xception model with data augmentation and 
 - Early stop patience is 10 
 - learning rate decay with number of epochs: lr * 0.9 ** epoch
 
-Training is done on Floydhub and terminated after the 45th epoch, reaching a validation accuracy of 80.8%.
+Training is done on Floydhub and terminated after the 45th epoch, reaching a validation accuracy of [80.8%](https://github.com/yueying-teng/dog_breeds_classification/blob/master/fine_tune_xception.ipynb)
 
 Fine tune more layers of pretrained Xception model

@@ -11,4 +11,13 @@ Tried to extract bottleneck features using preprocess_input from keras.applicati
 
 **Stage 2**
 
-Fine tuning 
+Fine tune the top layer of pretrained Xception model with data augmentation and the following specifications: 
+- lr = 0.01
+- RMSprop(lr = lr, rho = 0.9)
+- batch_size = 16, epochs = 50
+- Early stop patience is 10 
+- learning rate decay with number of epochs: lr * 0.9 ** epoch
+
+Training is done on Floydhub and terminated after the 45th epoch, reaching a validation accuracy of 80.8%.
+
+Fine tune more layers of pretrained Xception model
